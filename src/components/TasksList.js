@@ -25,6 +25,7 @@ export const TasksList = () => {
             <h3>{description}</h3>
             <h4><strong>{completed ? 'Completado' : 'Pendiente'}</strong></h4>
             <button onClick={() => handleDelete(id)}>Delete</button>
+            <Link to={`/edit-task/${id}`}>Edit</Link>
             <hr />
           </div>
         ))
